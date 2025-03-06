@@ -2,23 +2,12 @@
 
 ## Overview
 
-The Unit Converter Program is a simple console-based application written in C that allows users to convert between different units of temperature, currency, and mass. The user is prompted to select a category for conversion, and then the program guides them through the necessary steps to perform the conversion.
+The Unit Converter Program is a simple console-based application written in C that allows users to convert between different units of temperature. The user is prompted to select a category for conversion, and then the program guides them through the necessary steps to perform the conversion.
 
 ## Features
 
 1. **Temperature Conversion**  
    Convert between Fahrenheit and Celsius.
-
-2. **Currency Conversion**  
-   Convert USD to:
-   - Euro (EUR)
-   - Japanese Yen (JPY)
-   - Chinese Yuan (RMB)
-
-3. **Mass Conversion**  
-   Convert:
-   - Ounces to Pounds (lbs)
-   - Grams to Pounds (lbs)
 
 ## How to Use
 
@@ -39,29 +28,19 @@ The Unit Converter Program is a simple console-based application written in C th
 ## Program Flow
 
 1. **Category Selection**:  
-   The user is asked to choose one of three categories:
+   The user is asked to choose a category:
    - **T** for Temperature Conversion
-   - **C** for Currency Conversion
-   - **M** for Mass Conversion
 
 2. **Temperature Conversion**:  
    - Option to convert **Fahrenheit to Celsius** or **Celsius to Fahrenheit**.
    - User provides the temperature value, and the program displays the converted result.
-
-3. **Currency Conversion**:  
-   - Convert from **USD to Euro (EUR)**, **USD to Japanese Yen (JPY)**, or **USD to Chinese Yuan (RMB)**.
-   - User provides the amount in USD, and the program displays the converted amount in the selected currency.
-
-4. **Mass Conversion**:  
-   - Convert from **Ounces to Pounds (lbs)** or **Grams to Pounds (lbs)**.
-   - User provides the mass value, and the program displays the converted result.
 
 ## Example Usage
 
 ```bash
 Welcome to Unit Converter! 
 Here is a list of conversation to choose from: 
-Temperature(T), Currency(C), Mass(M) 
+Temperature(T) 
 Please enter the letter you want to convert.
 T
 
@@ -87,15 +66,6 @@ Celsius: 37
      \[
      F = \left( \frac{9}{5} \times C \right) + 32
      \]
-
-2. **Currency**:
-   - USD to Euro (EUR): Multiply by 0.87
-   - USD to Japanese Yen (JPY): Multiply by 111.09
-   - USD to Chinese Yuan (RMB): Multiply by 6.82
-
-3. **Mass**:
-   - Ounces to Pounds: Multiply by 0.0625
-   - Grams to Pounds: Multiply by 0.00220462
 
 ## Notes
 
