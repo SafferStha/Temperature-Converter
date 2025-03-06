@@ -24,7 +24,7 @@ int main() {
   printf("Here is a list of conversation to choose from: \n");
   printf("Temperature(T),Currency(C),Mass(M) \n");
   printf("Please enter the letter you want to convert.\n");
-  scanf("%c",&category);
+  scanf(" %c",&category); // Added space before %c to consume any leading whitespace
   
   if(category == 'T'){
       printf("Welcome to Temperature Converter! \n");
