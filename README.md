@@ -1,7 +1,3 @@
-Here is a sample README file for your program:
-
----
-
 # Unit Converter Program
 
 ## Overview
