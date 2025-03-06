@@ -4,8 +4,6 @@
 
 The Unit Converter Program is a simple console-based application written in C that allows users to convert between different units of temperature. The user is prompted to select a category for conversion, and then the program guides them through the necessary steps to perform the conversion.
 
-## Features
-
 **Temperature Conversion**  
    Convert between Fahrenheit and Celsius.
 
