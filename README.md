@@ -108,4 +108,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-This README file outlines the functionality of your unit converter program and provides basic usage instructions for users. Let me know if you'd like to adjust or add anything!
+This README file outlines the functionality of your unit converter program and provides basic usage instructions for users.
