@@ -1,76 +1,115 @@
-# Unit Converter
+Here is a sample README file for your program:
+
+---
+
+# Unit Converter Program
 
 ## Overview
 
-The Unit Converter is a simple application that allows users to convert between various units of measurement. It supports conversions for length, weight, temperature, and more. This project is designed to be user-friendly and efficient, making it easy for anyone to perform unit conversions quickly.
+The Unit Converter Program is a simple console-based application written in C that allows users to convert between different units of temperature, currency, and mass. The user is prompted to select a category for conversion, and then the program guides them through the necessary steps to perform the conversion.
 
 ## Features
 
-- Convert between different units of length (e.g., meters, kilometers, miles)
-- Convert between different units of weight (e.g., grams, kilograms, pounds)
-- Convert between different units of temperature (e.g., Celsius, Fahrenheit, Kelvin)
-- User-friendly interface
-- Fast and accurate conversions
+1. **Temperature Conversion**  
+   Convert between Fahrenheit and Celsius.
 
-## Installation
+2. **Currency Conversion**  
+   Convert USD to:
+   - Euro (EUR)
+   - Japanese Yen (JPY)
+   - Chinese Yuan (RMB)
 
-To run the Unit Converter locally, follow these steps:
+3. **Mass Conversion**  
+   Convert:
+   - Ounces to Pounds (lbs)
+   - Grams to Pounds (lbs)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/unit-converter.git
+## How to Use
+
+1. Compile the program using a C compiler, such as GCC:
+   ```
+   gcc unit_converter.c -o unit_converter
    ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd unit-converter
+2. Run the program:
+   ```
+   ./unit_converter
    ```
 
-3. Install the required dependencies (if applicable):
-   ```bash
-   npm install
-   ```
+3. Follow the on-screen prompts to select a category and conversion type.
 
-4. Run the application:
-   ```bash
-   npm start
-   ```
+4. Input the values as requested, and the program will display the converted results.
 
-## Usage
+## Program Flow
 
-1. Open the application in your web browser.
-2. Select the type of conversion you want to perform (length, weight, temperature).
-3. Enter the value you wish to convert.
-4. Choose the units you are converting from and to.
-5. Click the "Convert" button to see the result.
+1. **Category Selection**:  
+   The user is asked to choose one of three categories:
+   - **T** for Temperature Conversion
+   - **C** for Currency Conversion
+   - **M** for Mass Conversion
 
-## Contributing
+2. **Temperature Conversion**:  
+   - Option to convert **Fahrenheit to Celsius** or **Celsius to Fahrenheit**.
+   - User provides the temperature value, and the program displays the converted result.
 
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
+3. **Currency Conversion**:  
+   - Convert from **USD to Euro (EUR)**, **USD to Japanese Yen (JPY)**, or **USD to Chinese Yuan (RMB)**.
+   - User provides the amount in USD, and the program displays the converted amount in the selected currency.
 
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add your message here"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a pull request.
+4. **Mass Conversion**:  
+   - Convert from **Ounces to Pounds (lbs)** or **Grams to Pounds (lbs)**.
+   - User provides the mass value, and the program displays the converted result.
+
+## Example Usage
+
+```bash
+Welcome to Unit Converter! 
+Here is a list of conversation to choose from: 
+Temperature(T), Currency(C), Mass(M) 
+Please enter the letter you want to convert.
+T
+
+Welcome to Temperature Converter! 
+Here is a list of conversations to choose from: 
+Enter 1 for Fahrenheit to Celsius. 
+Enter 2 for Celsius to Fahrenheit. 
+1
+
+Please enter the Fahrenheit degree: 
+100
+Celsius: 37
+```
+
+## Conversion Formulas Used
+
+1. **Temperature**:  
+   - Fahrenheit to Celsius:  
+     \[
+     C = \frac{(F - 32) \times 5}{9}
+     \]
+   - Celsius to Fahrenheit:  
+     \[
+     F = \left( \frac{9}{5} \times C \right) + 32
+     \]
+
+2. **Currency**:
+   - USD to Euro (EUR): Multiply by 0.87
+   - USD to Japanese Yen (JPY): Multiply by 111.09
+   - USD to Chinese Yuan (RMB): Multiply by 6.82
+
+3. **Mass**:
+   - Ounces to Pounds: Multiply by 0.0625
+   - Grams to Pounds: Multiply by 0.00220462
+
+## Notes
+
+- Ensure that the correct choice is selected for each conversion type.
+- The program only supports the specific conversion types listed in the options.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Thank you to all contributors and users for your support and feedback!
-
 ---
 
-Feel free to modify any sections to better fit your project!
+This README file outlines the functionality of your unit converter program and provides basic usage instructions for users. Let me know if you'd like to adjust or add anything!
