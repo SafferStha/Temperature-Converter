@@ -19,34 +19,26 @@ int celsiusToFahrenheit(int celsius) {
 }
 
 int main() {
-    char category;
     int tempChoice;
     int userinputF; // User inputted Fahrenheit
     int userinputC; // User inputted Celsius
     int convertedTemp; // Variable to store the converted temperature
 
-    printf("Please enter the category (T for temperature): \n");
-    scanf(" %c", &category); // Added space before %c to consume any leading whitespace
+    printWelcomeMessage();
+    scanf("%d", &tempChoice);
 
-    if (category == 'T') {
-        printWelcomeMessage();
-        scanf("%d", &tempChoice);
-
-        if (tempChoice == 1) {
-            printf("Please enter the Fahrenheit degree: \n");
-            scanf("%d", &userinputF);
-            convertedTemp = fahrenheitToCelsius(userinputF);
-            printf("Celsius: %d\n", convertedTemp);
-        } else if (tempChoice == 2) {
-            printf("Please enter the Celsius degree: \n");
-            scanf("%d", &userinputC);
-            convertedTemp = celsiusToFahrenheit(userinputC);
-            printf("Fahrenheit: %d\n", convertedTemp);
-        } else {
-            printf("Please enter the correct choice. \n");
-        }
+    if (tempChoice == 1) {
+        printf("Please enter the Fahrenheit degree: \n");
+        scanf("%d", &userinputF);
+        convertedTemp = fahrenheitToCelsius(userinputF);
+        printf("Celsius: %d\n", convertedTemp);
+    } else if (tempChoice == 2) {
+        printf("Please enter the Celsius degree: \n");
+        scanf("%d", &userinputC);
+        convertedTemp = celsiusToFahrenheit(userinputC);
+        printf("Fahrenheit: %d\n", convertedTemp);
     } else {
-        printf("Please enter a valid category. \n");
+        printf("Please enter the correct choice. \n");
     }
 
     return 0;
