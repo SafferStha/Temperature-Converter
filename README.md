@@ -6,7 +6,7 @@ The Unit Converter Program is a simple console-based application written in C th
 
 ## Features
 
-1. **Temperature Conversion**  
+**Temperature Conversion**  
    Convert between Fahrenheit and Celsius.
 
 ## How to Use
@@ -57,7 +57,7 @@ Celsius: 37
 
 ## Conversion Formulas Used
 
-1. **Temperature**:  
+**Temperature**:  
    - Fahrenheit to Celsius:  
      \[
      C = \frac{(F - 32) \times 5}{9}
@@ -71,10 +71,6 @@ Celsius: 37
 
 - Ensure that the correct choice is selected for each conversion type.
 - The program only supports the specific conversion types listed in the options.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
