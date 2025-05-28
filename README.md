@@ -13,12 +13,14 @@ The Temperature Converter Program is a console-based application written in C th
 
 1. **Compile the Program**:  
    To compile the program, you need a C compiler such as GCC:
+
    ```bash
    gcc temperature_converter.c -o temperature_converter
    ```
 
 2. **Run the Program**:  
    After compiling, run the program using the following command:
+
    ```bash
    ./temperature_converter
    ```
@@ -62,6 +64,7 @@ The Temperature Converter Program is a console-based application written in C th
 ## Example Usage
 
 ### Scenario 1: Fahrenheit to Celsius
+
 ```bash
 Welcome to Temperature Converter! 
 Here is a list of conversions to choose from: 
@@ -74,6 +77,7 @@ Celsius: 37
 ```
 
 ### Scenario 2: Celsius to Fahrenheit
+
 ```bash
 Welcome to Temperature Converter! 
 Here is a list of conversions to choose from: 
@@ -92,4 +96,4 @@ Fahrenheit: 32
 
 ---
 
-This README outlines the purpose, usage instructions, and expected results for your temperature converter program. 
+This README outlines the purpose, usage instructions, and expected results for your temperature converter program.
