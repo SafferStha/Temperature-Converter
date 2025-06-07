@@ -51,11 +51,11 @@ The Temperature Converter Program is a console-based application written in C th
 3. **Temperature Conversion**:
    - **Fahrenheit to Celsius**: The conversion formula used is:
      \[
-     C = \frac{(F - 32) \times 5}{9}
+     C = ((F - 32) * 5) / 9
      \]
    - **Celsius to Fahrenheit**: The conversion formula used is:
      \[
-     F = \left( \frac{C \times 9}{5} \right) + 32
+     F = (C × 9 / 5) + 32
      \]
 
 4. **Display Results**:  
@@ -66,7 +66,7 @@ The Temperature Converter Program is a console-based application written in C th
 ### Scenario 1: Fahrenheit to Celsius
 
 ```bash
-Welcome to Temperature Converter! 
+Welcome to the Temperature Converter Program! 
 Here is a list of conversions to choose from: 
 Enter 1 for Fahrenheit to Celsius. 
 Enter 2 for Celsius to Fahrenheit. 
@@ -91,9 +91,9 @@ Fahrenheit: 32
 
 ## Notes
 
-- Ensure to enter a valid choice (either `1` or `2`) when prompted for the conversion type.
+- Ensure to enter a valid choice (either `1` or `2`) when prompted for the conversion type. If an invalid choice is entered, the program will display an error message and prompt you to enter a valid choice again.
 - The program currently supports only temperature conversions (Fahrenheit ↔ Celsius).
+- The program does not handle invalid temperature inputs (e.g., non-numeric values). It assumes that the user will enter valid numeric temperatures.
+- Future enhancements may include support for Kelvin conversions or other temperature scales.
 
 ---
-
-This README outlines the purpose, usage instructions, and expected results for your temperature converter program.
